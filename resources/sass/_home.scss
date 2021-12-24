@@ -1,0 +1,21 @@
+
+main{
+    background-color: rgb(12, 10, 7);
+    min-height: 100px;
+
+}
+.container{
+    padding: 20px;
+    margin: auto;
+    
+
+    .card{
+        
+        background-color: gray;
+        color: white;
+        box-shadow: 10px 8px 1pc white;
+    }
+}
+
+.card-header {color: rgb(97, 6, 6);
+              }
