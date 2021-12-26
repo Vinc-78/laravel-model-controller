@@ -1,19 +1,3 @@
-{{-- @extends('layout.layout')
-
-@section('title','My Movies')
-    
-@endsection
-
-@section('content')
-
-@foreach ($movie as $item)
-
-<h1>{{$item["title"]}}</h1>
-    
-@endforeach
-
-@endsection --}}
-
 @extends('layout.layout')
 
 @section("title" , "My Movie")
@@ -22,6 +6,19 @@
 @section('content')
 
     <div class="container">
+
+        <div class="ricerca">
+
+            <form action="">
+                <label for="ricerca">Ricerca schede film:</label><br>
+                <input type="text" name="ricerca" placeholder="Scrivi il nome del film"
+                value="{{$filtro}}">
+
+            </form>
+
+        </div>
+
+        
 
         <div class="row row-cols-4 g-3 justify-content-between ">
 
@@ -47,6 +44,7 @@
             
 
         </div>
+
     </div>
 
    {{--  <h1>{{$item["title"]}}</h1> --}}
