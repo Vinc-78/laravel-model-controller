@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Request as FacadesRequest;
 
 class MovieController extends Controller
 {
-    function index() {
+  
+  
+  function index() {
         $movies=Movie::all();
 
         $datifiltrati =[];
@@ -23,9 +25,9 @@ class MovieController extends Controller
                 }
               }
             }
-            else {$datifiltrati = $movies;}
+            else {$datifiltrati = $movies;} 
 
-        /*  return $movies; */
+        #  return $movies; # per avere il json all'avvio della pagina con i dati presi dal db 
  
       return view("home", 
       [ "movie"=>$datifiltrati,

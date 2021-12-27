@@ -1,5 +1,5 @@
 main {
-  background-color: #0c0a07;
+  background-color: #8194b8;
   min-height: 100px;
 }
 
@@ -9,12 +9,13 @@ main {
 }
 
 .container .card {
-  background-color: gray;
+  background-color: #0d5483;
   color: white;
   box-shadow: 10px 8px 1pc white;
 }
 
 .card-header {
-  color: #610606;
+  color: white;
+  text-shadow: 3px 5px 1px #030846;
 }
 
